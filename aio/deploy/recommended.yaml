@@ -43,8 +43,6 @@ spec:
   selector:
     k8s-app: kubernetes-dashboard
   type: NodePort
-externalIPs:
-  - 192.168.50.10
 ---
 
 apiVersion: v1
