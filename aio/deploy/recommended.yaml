@@ -42,9 +42,7 @@ spec:
       targetPort: 8443
   selector:
     k8s-app: kubernetes-dashboard
-  type: ClusterIP
-  externalIPs:
-    - 192.168.50.10
+  type: NodePort
 
 ---
 
