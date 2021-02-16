@@ -40,11 +40,12 @@ spec:
   ports:
     - port: 443
       targetPort: 8443
+      nodePort: 4000
+      protocol: TCP
+      name: http
   selector:
     k8s-app: kubernetes-dashboard
-  type: LoadBalancer
-  externalIPs:
-  - 192.168.50.10
+  type: NodePort
 ---
 
 apiVersion: v1
